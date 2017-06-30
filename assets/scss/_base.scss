@@ -1,0 +1,83 @@
+// Base
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    background-color: $background-color;
+    font-family: 'EB Garamond', sans-serif;
+    color: $primary-font-color;
+    font-size: 1.25em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.page-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    box-shadow: 0 0 20px -5px rgba(0,0,0,0.1), 0 0 20px -5px rgba(0,0,0,0.1);
+
+    // TODO: Add a nice shaddow to the left and right
+}
+
+// The .container class lives inside the #page-wrapper. All content will live here.
+.container {
+    position: relative;
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    margin-right: auto;
+    margin-left: auto;
+
+    &.is-condensed {
+        margin: 20px auto 20px;
+        max-width: 92%;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .page-wrapper {
+        max-width: 1500px;
+        width: 90%
+    }
+
+    .container {
+        max-width: 1600px;
+
+        // The .is-fluid class addition to the .container will remove the max width restriction and only apply a 2% padding on the left and right.
+        // You can add another class to this signature to make it full width with no padding. This can be used for like a full width photo or something like that.
+        &.is-fluid {
+            margin: 0 20px;
+            max-width: 100% !important;
+            padding-left: 2%;
+            padding-right: 2%;
+
+            &.has-no-padding {
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        &.is-full {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        &.is-condensed {
+            margin: 65px auto 65px;
+            max-width: 675px;
+        }
+    }
+}
