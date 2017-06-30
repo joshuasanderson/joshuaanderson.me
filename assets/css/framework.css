@@ -96,17 +96,16 @@ body {
 
 .container {
   position: relative;
-  padding-right: 7%;
-  padding-left: 7%;
+  padding-right: 10%;
+  padding-left: 10%;
   padding-bottom: 4%;
   padding-top: 4%;
   margin-right: auto;
   margin-left: auto; }
   .container.is-condensed {
-    margin: 20px auto 20px;
-    max-width: 92%; }
+    max-width: 80%; }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1200px) {
   .page-wrapper {
     max-width: 1500px;
     width: 90%; }
@@ -126,8 +125,7 @@ body {
       padding: 0;
       width: 100%; }
     .container.is-condensed {
-      margin: 65px auto 65px;
-      max-width: 675px; } }
+      max-width: 80%; } }
 header {
   position: fixed;
   left: 0;
@@ -152,7 +150,7 @@ header {
       header .header-content .title .title-link {
         font-size: 20px;
         margin: 0;
-        font-family: 'Nunito', sans-serif;
+        font-family: 'Nunito',"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-weight: 700;
         color: #8898aa;
         text-decoration: none; }
@@ -160,6 +158,14 @@ header {
           color: #484747; }
       header .header-content .title.active {
         display: none; }
+      header .header-content .title .sub-title {
+        font-size: .5em;
+        margin: 0;
+        font-family: 'Nunito',"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        color: #a6a6a6;
+        text-decoration: none;
+        text-transform: lowercase; }
     header .header-content .menu {
       text-align: right; }
       header .header-content .menu ul li {
@@ -307,7 +313,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   letter-spacing: normal;
   margin-top: 0;
