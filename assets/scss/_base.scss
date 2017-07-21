@@ -21,7 +21,7 @@ body {
 }
 
 .page-wrapper {
-    width: 100%;
+    max-width: 1500px;
     margin: 0 auto;
     background: white;
     position: relative;
@@ -45,14 +45,12 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 700px) {
     .page-wrapper {
-        max-width: 1500px;
         width: 90%
     }
 
     .container {
-        max-width: 1600px;
 
         // The .is-fluid class addition to the .container will remove the max width restriction and only apply a 2% padding on the left and right.
         // You can add another class to this signature to make it full width with no padding. This can be used for like a full width photo or something like that.

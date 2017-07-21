@@ -1,11 +1,13 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joshua Anderson</title>
     <link href="https://fonts.googleapis.com/css?family=Karla|Lora|Nunito|EB+Garamond:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/framework.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/vender/zoom.css" />
 </head>
 
 <body>
@@ -47,16 +49,33 @@
         </div>
 
         <div class="container">
-            <h4>This is the grid system</h4>
-            <div class="row">
-                <div class="column">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            <div class="masonry">
+                <div class="item">
+                    <img data-action="zoom" src="https://unsplash.it/900" title="photo" />
                 </div>
-                <div class="column">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <div class="item">
+                    <img data-action="zoom" src="https://unsplash.it/500" title="photo" />
                 </div>
-                <div class="column">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <div class="item">
+                    <img data-action="zoom" src="https://unsplash.it/300" title="photo" />
+                </div>
+                <div class="item">
+                    <img data-action="zoom" src="https://unsplash.it/600/600" title="photo" />
+                </div>
+                <div class="item">
+                    <img data-action="zoom" src="https://unsplash.it/450" title="photo" />
+                </div>
+                <div class="item">
+                    <img data-action="zoom" src="https://unsplash.it/450/450" title="photo" />
+                </div>
+                <div class="item">
+                    <img data-action="zoom" src="https://unsplash.it/900" title="photo" />
+                </div>
+                <div class="item">
+                    <img data-action="zoom" src="https://unsplash.it/870" title="photo" />
+                </div>
+                <div class="item">
+                    <img data-action="zoom" src="https://unsplash.it/900" title="photo" />
                 </div>
             </div>
         </div>
@@ -80,26 +99,10 @@
         </div>
 
     </div>
-    <div class="overlay" id="overlay">
-        <nav class="overlay-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
 
-    <script>
-        $(function() {
-            $('.js-menu').click(function() {
-                $(this).toggleClass('active');
-                $('header .title').toggleClass('active');
-                $('#overlay').toggleClass('open');
-            });
-        });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/vender/zoom.js"></script>
 </body>
 
 </html>
